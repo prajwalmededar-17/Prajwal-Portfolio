@@ -13,7 +13,7 @@ Welcome to my personal portfolio website! This site showcases my **skills**, **p
 
 ## 🔗 Live Preview
 
-➡️ **[View the Live Site](#)**  
+➡️ **https://prajwal-portfolio-chi.vercel.app/**  
 *(Replace with your actual deployed URL on Vercel, GitHub Pages, etc.)*
 
 ## 🛠️ Built With
