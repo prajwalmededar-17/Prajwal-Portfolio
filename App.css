@@ -1,4 +1,5 @@
-/* Reset & Base */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,7 @@ body {
   backdrop-filter: blur(10px);
   background: rgba(15, 32, 39, 0.7);
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -249,19 +251,56 @@ p {
   color: #aaa;
 }
 
-/* Responsive */
+/* Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
   .header {
-      padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
+
   .navbar .nav-links {
-      gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
   }
+
+  .home-section {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
   .home-section h1 {
-      font-size: 2.5rem;
+    font-size: 2rem;
   }
+
+  .home-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .home-section p {
+    font-size: 0.95rem;
+  }
+
   .profile-img {
-      width: 200px;
-      height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .skills-container,
+  .projects-container,
+  .volunteer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
